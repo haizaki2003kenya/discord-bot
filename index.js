@@ -149,4 +149,8 @@ client.on("voiceStateUpdate", async (oldState, newState) => {
   }
 });
 
+
+console.log("TOKEN EXISTS:", !!process.env.TOKEN);
+console.log("TOKEN LENGTH:", process.env.TOKEN?.length);
 client.login(process.env.TOKEN);
+
